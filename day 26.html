@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Aggregator</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #000000;
+    background: radial-gradient(circle at 50.4% 50.5%, #07e2ff 0%, rgb(41, 185, 241) 90%);
+}
+
+header, footer {
+    background: #240747;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    flex: 1;
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #13aaf0;
+    background: black;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h2 {
+    color: #000000;
+}
+
+.post-meta {
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+.headbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(127, 35, 214);
+    width: 100%;
+    height: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="headbar">Blog Aggregator</nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="#" onclick="toggleSubcategory('technology')">Fruits</a>
+            <!-- Sidebar content goes here -->
+            
+                
+                    
+                       
+                            <ul>
+                                <li><a href="mango.html">Mango</a></li>
+                                
+                                
+                                <li><a href="apple.html">Apple</a></li>
+                                <li><a href="banana.html">Banana</a></li>
+                                <li><a href="grapes.html">Grapes</a></li>
+                                <li><a href="pomegranate.html">Pomegranate</a></li>
+                                <li><a href="watermelon.html" onclick="loadCategory('Cloud computing')">Watermelon</a></li>
+                                <!-- Add more categories here -->
+                                <aside class="sidebar"></aside>
+                            </ul>
+                        </aside>
+                        
+                    </aside>
+                    
+                </ul>
+            </aside>
+            
+        </aside>
+        <main class="main-content">
+            <!-- Main content and blog posts go here -->
+           <img src="https://i.pinimg.com/originals/13/0b/66/130b66c6930fc7af0c603f9ea22f53d3.jpg" width="300" height="250" alt="">
+           <img src="https://tse4.mm.bing.net/th?id=OIP.v3AVWk39N6QhN2P2Qc4XOwAAAA&pid=Api&P=0&h=180" width="300" height="250" alt="">
+           <img src="https://wallpaperaccess.com/full/1101708.jpg" width="300" height="250" alt="">
+           <img src="https://images8.alphacoders.com/386/386285.jpg" width="300" height="250" alt="">
+
+            <!-- Add more posts here -->
+        </main>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+        © madhava reddy 2024 Blog Aggregator
+    </footer>
+
+    <script src="26.js"></script>
+</body>
+</html>
